@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fbe4d8;
+    font-family: 'Phudu', cursive;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(82, 40, 91, 1) 0%, rgba(43, 18, 76, 1) 50%, rgba(25, 0, 25, 1) 96%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-clock {
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px #854f8c, 0 0 100px #854f8c76;
+}
+
+.container-clock p {
+    font-size: 8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: topInDown 10s ease-in-out 0s infinite normal none;
+}
+
+.container-clock p:first-child::before {
+    content: '';
+    margin-right: 0;
+}
+
+.container-clock p::before {
+    content: ':';
+    margin: 8px;
+}
+
+h1 {
+    opacity: 0.5;
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 0 0 10px #854f8c, 0 0 100px #854f8c76;
+}
+
+@keyframes topInDown {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}

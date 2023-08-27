@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temporizador</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <section class="temp">
+        <h1>Temporizador</h1>
+        <div class="temp-timer">
+          <input type="number" id="numberTime" placeholder="Digite um valor" required>
+          <span id="timer">00 : 00</span>
+        </div>
+        <div class="temp-buttons">
+            <button id="iniciar"><i class="fi fi-rr-play"></i></button>
+            <button id="resetar"><i class="fi fi-rr-refresh"></i></button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
