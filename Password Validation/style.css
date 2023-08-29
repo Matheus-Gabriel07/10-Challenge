@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1faee;
+}
+
+.container {
+    padding: 16px 0;
+    padding-inline: 2rem;
+    border: 0;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #d7e0d4;
+    box-shadow: 2px 2px 20px rgba(0,0,0.2);
+}
+
+.container-password {
+    display: block;
+    margin: 8px auto;
+}
+
+#password {
+    width: 350px;
+    padding: 8px 16px;
+}
+
+.container-requireds {
+    margin: 32px 0;
+}
+
+p {
+    margin: 4px 0;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+#minPassword.concluido,
+#numberPassword.concluido,
+#letterPassword.concluido,
+#caracterPassword.concluido {
+    color: #457b9d;
+    transition: 250ms;
+}
+
+#minPassword,
+#numberPassword,
+#letterPassword,
+#caracterPassword {
+    color: #e63946;
+    transition: 250ms;
+}
